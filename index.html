@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Libik Project country data!</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" type="text/css" href="fontello-6355429c/css/fontello.css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    </head>
+    <body>
+        <div id="navBar">
+                <h1><i class="icon-globe-1"></i>COUNTRY DATA FINDER!</h1>
+                <h4>Easiest way to find information about country.</h4>
+        </div>
+
+        <div id ="input">
+                <input id="country" type="text" value="" placeholder="Type country..." list="listofCountry">
+                <button onclick="getNameofCountry()"><i class="icon-search"></i></button>
+                <div id="name_error"></div>
+            </div>
+        <div id="container">
+            
+            <div id="dataSection">
+                <div class="country">
+                    <span id="countryName"></span>
+                </div>
+
+                <div id="temperature">
+                    <i class="icon-temperatire"></i><span class="temperaturee"></span>°C
+                </div>
+                <div id="weatherimgDiv">
+                    <img class="weatherImg" src="" height="75px" width="75px">
+                </div>
+                <div style="clear:both"></div>
+                
+                <div class="currencyRegionLanguage">
+                    <p><i class="icon-globe"></i><span id="region"> region</span></p>
+                    <p><i class="icon-emo-tongue"></i><span id="langugage"> langugage</span></p>
+                    <p><i class="icon-money"></i><span id="currency"> currency</span></p>
+                </div>
+                       
+                </div>
+            
+            <div id="flag">
+                    <img class="flagg" src="">
+            </div>
+            <div id="map">
+
+            </div>
+        </div>
+
+        <div id="footer">
+                The Best Country Finder &copy; All right reserved
+        </div>
+        <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+        <script src="./script.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDuBkEMTLY_qie_JX-8epECDILu3x9I0Us&callback=initMap"></script>
+    </body>
+</html>
